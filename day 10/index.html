@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./image/logo.png" type="image/x-icon">
+    <title>OnClick</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .nav {
+        background-color: #ececec;
+    }
+
+    .container {
+        width: min(1200px, 100% - 2rem);
+        margin-inline: auto;
+    }
+
+    .logo {
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+    }
+
+    .logo-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: inline-block;
+    }
+
+    .nav-left {
+        display: flex;
+        align-items: center;
+        gap: 100px;
+    }
+
+    .links {
+        width: 100%;
+        list-style: none;
+        display: flex;
+        gap: 10px;
+    }
+
+    .nav-link {
+        color: #000;
+        text-decoration: none;
+    }
+
+    .nav-link1 {
+        color: #000;
+        text-decoration: none;
+        border: 2px solid brown;
+        border-radius: 10px;
+        padding: 3px 5px;
+    }
+
+    .nav-link:hover {
+        text-decoration: underline;
+        padding: 5px 7px;
+        background-color: rgba(135, 207, 235, 0.3);
+        transition: .4s;
+        font-size: 18px;
+    }
+
+    .about {
+        margin-right: auto;
+    }
+
+    .login {
+        margin-right: auto;
+    }
+</style>
+
+<body>
+    <nav class="nav">
+        <div class="container">
+
+            <div class="nav-left">
+                <div class="logo">
+                    <img src="./image/logo.png" alt="logo" class="logo-img">
+                    <h3>Onclick</h3>
+                </div>
+
+                <ul class="links">
+                    <li><a href="#" class="nav-link">Home</a></li>
+                    <li><a href="#" class="nav-link"> Services</a></li>
+                    <li><a href="#" class="nav-link">Contact</a></li>
+                    <li class="about"><a href="#" class="nav-link">About Us</a></li>
+                    <li><a href="#" class="nav-link">Login</a></li>
+                    <li><a href="#" class="nav-link1">Sign Up</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+</body>
+
+</html>
